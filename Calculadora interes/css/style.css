@@ -94,3 +94,15 @@ body {
     font-weight: 700;
     color: #2b7a3a;
 }
+
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 4px;
+    padding: 16px 18px;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #f4f7e4, #edf2d6);
+}
+
