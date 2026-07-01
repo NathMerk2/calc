@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratica</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <label for="valor1">Total venta</label>
+        <input type="text" name="calc" id="valor1" autocomplete="off" autofocus onblur="calcularInicial(this)">
+        <p id="inicial-result"></p>
+        <label for="valor2">Inicial Cliente</label>
+        <input type="text" name="calc" id="valor2" autocomplete="off">
+        <label for="valor5">a 30 dias</label>
+        <input type="text" name="calc" id="valor5" autocomplete="off" onblur="calcularTreintaDias(this)">
+        <label for="valor3">Cuotas</label>
+        <input type="text" name="calc" id="valor3" autocomplete="off">
+        <label for="valor4">Interes</label>
+        <input type="text" name="calc" id="valor4" autocomplete="off">
+        <label for="valor6">anios</label>
+        <input type="text" name="calc" id="valor6" autocomplete="off">
+        <br><br>
+        <input type="button" name="calc" id="calcular" value="Calcular" onclick="calcular(this)">
+        <br><br>
+        <div class="res">
+            <label for="res" id="res">Resultado: </label>
+            <p id="resultado">$0</p>
+        </div>
+        <aside>
+            <p id="treintadias-result"></p>
+        </aside>
+    </div>
+</body>
+</html>
